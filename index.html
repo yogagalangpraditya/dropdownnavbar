@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/output.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+<header class="navbar-start sticky top-0 bg-white w-full lg:py-4 py-3 px-5">
+  <div class="navbar bg-base-100">
+    <div class="navbar-start">
+      
+    <a class="normal-case text-4xl font-bold">snap</a>
+    
+    <div class="navbar-center hidden lg:flex ml-10">
+      <ul class="menu menu-horizontal px-1 gap-8">
+        <li>          
+          <details>
+            <summary class="text-gray-600 hover:bg-transparent hover:text-black">Features</summary>
+            <ul class="p-2">
+              <li><a><img src="images/icon-todo.svg" alt=""> Todo List</a></li>
+              <li><a><img src="images/icon-calendar.svg" alt=""> Calendar</a></li>
+              <li><a href=""><img src="images/icon-reminders.svg" alt=""> Reminders</a></li>
+              <li><a href=""><img src="images/icon-planning.svg" alt=""> Planning</a></li>
+            </ul>
+        </details>
+      </li>
+        <li tabindex="0">
+          <details>
+            <summary class="text-gray-600 hover:bg-transparent hover:text-black" >Company</summary>
+            <ul class="p-2">
+              <li><a>History</a></li>
+              <li><a>Our Team</a></li>
+            </ul>
+          </details>
+        </li>
+        <li class="justify-center text-gray-600 ml-3">Carers</li>
+        <li><a href="" class="ml-3 text-gray-600 hover:bg-transparent hover:text-black">About</a></li>
+      </ul>
+    </div>
+  </div>
+    <div class="navbar-end">
+      <a class="hidden lg:flex btn normal-case border-transparent bg-transparent text-gray-600 hover:bg-transparent hover:border-transparent mr-3 hover:text-black">Button</a>
+      <a class="hidden lg:flex btn normal-case text-gray-600 rounded-xl bg-transparent border-black hover:text-black hover:bg-transparent hover:border-black">Register</a>
+    </div>
+    <button class="lg:hidden group">
+      <img src="images/icon-menu.svg" alt="">
+      <div class="absolute top-0 -right-full h-screen w-8/12 bg-white border transform group-focus:right-0 group-focus:opacity-100 transition-all duration-300">
+        <ul class="flex flex-col w-full text-base cursor-pointer pt-10 mt-10">
+          <li>
+            <li>
+              <li class="font-medium ml-5 text-left text-gray-600 hover:bg-transparent"">Features</li>
+              <ul class="p-5 text-left ml-5 text-gray-500 font-medium ">
+                <li class="flex items-center mb-3 hover:text-black">
+                  <img src="images/icon-todo.svg" alt="Gambar 1" class="h-4 w-4 mr-2 align-middle">
+                  <a href="" class="ml-2">Todo List</a>
+                </li>
+                <li class="flex items-center mb-3 hover:text-black">
+                  <img src="images/icon-calendar.svg" alt="Gambar 2" class="h-4 w-4 mr-2 align-middle">
+                  <a href="" class="ml-2">Calendar</a>
+                </li>
+                <li class="flex items-center mb-3 hover:text-black">
+                  <img src="images/icon-reminders.svg" alt="Gambar 3" class="h-4 w-4 mr-2 align-middle">
+                  <a href="" class="ml-2">Reminders</a>
+                </li>
+                <li class="flex items-center mb-3 hover:text-black">
+                  <img src="images/icon-planning.svg" alt="Gambar 4" class="h-4 w-4 mr-2 align-middle">
+                  <a href="" class="ml-2">Planning</a>
+                </li>
+              </ul>
+            </li>
+          </li>
+          <li>
+            <li>
+              <li class="font-medium ml-5 text-left text-gray-600 hover:bg-transparent"">Company</li>
+              <ul class="p-5 text-left ml-5 text-gray-500 font-medium">
+                <li class="hover:text-black"><a>History</a></li>
+                <li class="mt-3 hover:text-black"><a>Our Team</a></li>
+              </ul>
+            </li>
+          </li>
+          <li class="text-left text-gray-600 ml-5 mt-4 font-medium">Carers</li>
+          <li class="text-left text-gray-600 ml-5 mt-4 hover:text-black font-medium"><a href="">About</a></li>
+          <li class="mt-5">
+            <a class="btn normal-case border-transparent bg-transparent text-gray-600 hover:bg-transparent hover:border-transparent mr-3 hover:text-black">Login</a>
+          </li>
+          <li>
+            <a class="btn normal-case text-gray-600 rounded-xl bg-transparent border-black hover:text-black hover:bg-transparent hover:border-black px-20">Register</a>
+          </li>
+        </ul>
+      </div>
+    </button>
+    
+</header>
+
+<section id="home" class="lg:px-40 lg:py-20">
+  <div>
+    <img src="images/image-hero-mobile.png" alt="" class="lg:hidden w-full"">
+  </div>
+  <div class="lg:flex lg:justify-center lg:items-center">
+    <div class="px-2  text-center lg:text-left">
+      <h1 class=" text-4xl text-black font-bold mt-10 lg:text-8xl lg:w-[60%]">Make remote work</h1>
+      <p class="text-[16px] mt-4 font-medium text-gray-500 mb-9 lg:text-[18px] lg:w-1/2">Get your team in sync, no matter your location, Streamline processes, create team rituals, and watch productivity soar,</p>
+      <a href="#" class="bg-black py-[14px] px-5 text-white rounded-lg font-bold mb-4 hover:bg-gray-800">Learn more</a>
+      <div class="flex justify-center gap-3 items-center mt-14 lg:mt-24 px-3 lg:justify-start">
+        <img class="w-20 lg:w-20" src="images/client-databiz.svg" alt="">
+        <img class="w-14 lg:w-20" src="images/client-audiophile.svg" alt="">
+        <img class="w-20 lg:w-28" src="images/client-meet.svg" alt="">
+        <img class="w-20 lg:w-28" src="images/client-maker.svg" alt="">
+      </div>
+    </div>
+    <div>
+      <img class="lg:flex max-[1000px]:hidden max-w-[450px]" src="images/image-hero-desktop.png" alt="">
+    </div>
+  </div>
+
+</section>
+  <div class="attribution mt-14">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/yogagalangpraditya">Yoga Galang Praditya</a>.
+  </div>
+</body>
+</html>
+<!-- npx tailwindcss -i ./src/css/input.css -o ./dist/css/output.css --watch -->
